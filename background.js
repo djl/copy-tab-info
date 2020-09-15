@@ -25,5 +25,6 @@ browser.menus.onClicked.addListener(function(info, tab) {
         navigator.clipboard.writeText(s).then(function () {
             console.log('Copied URL/title as Markdown to clipboard.');
         });
+        break;
     }
 });
