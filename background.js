@@ -21,7 +21,7 @@ browser.menus.onClicked.addListener(function(info, tab) {
         });
         break;
     case 'markdown':
-        const s = `[${tab.url}](${tab.title})`;
+        const s = `[${tab.title}](${tab.url})`;
         navigator.clipboard.writeText(s).then(function () {
             console.log('Copied URL/title as Markdown to clipboard.');
         });
